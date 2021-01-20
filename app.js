@@ -20,7 +20,15 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// to serve frontend also from server (because when deployed, we have just one server)
+app.use(express.static(path.join(__dirname, "client", "build")));
+
 app.use("/", indexRouter);
+
+//to manage all of other routes than we specifically defined above (so it will lead to our landing page)
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
