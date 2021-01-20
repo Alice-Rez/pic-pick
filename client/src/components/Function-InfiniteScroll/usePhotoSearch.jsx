@@ -16,7 +16,7 @@ export default function usePhotoSearch(query, pageNumber, searchOn) {
     setErr({ noResults: false, APINotWork: false });
     axios({
       method: "POST",
-      url: "http://localhost:3500/search",
+      url: "/search",
       data: {
         query: query,
         page: pageNumber,

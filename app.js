@@ -8,14 +8,14 @@ const logger = require("morgan");
 const createError = require("http-errors");
 
 // cross-origin-policy -> needed when using POST method!
-// var cors = require("cors");
+var cors = require("cors");
 
 //importing routes
 var indexRouter = require("./routes/index");
 
 const app = express();
 
-// app.use(cors());
+app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
