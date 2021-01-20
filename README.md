@@ -2,6 +2,8 @@
 
 "Pick your pictures"
 
+Explore [Live demo](pic-pick.herokuapp.com/)
+
 ## Description
 
 Application for searching photo collections from Unsplash API. Just type theme of the photos you want to get in the searching field and see, what beautiful photos you will get.
