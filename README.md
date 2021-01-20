@@ -24,10 +24,10 @@ Now the app is automatically calling another photos from API when user scroll do
    npm install
    ```
 3. Get your own API key from [Unsplash API](https://unsplash.com/developers)
-4. In the `src/components` folder create new file with name `config.js`
-5. Insert your own API key in the `config.js` :
+4. Create new file with name `.env` in root
+5. Insert your own API key in the `.env` :
    ```javascript
-   export const apiKey = "<here-comes-your-own-API-key>";
+   API_KEY = <here-comes-your-own-API-key>
    ```
 6. Enjoy using application
 
