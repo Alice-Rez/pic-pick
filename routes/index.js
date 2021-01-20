@@ -10,7 +10,6 @@ router.get("/", (req, res, next) => {
 });
 
 router.post("/search", (req, res, next) => {
-  console.log(req.body);
   const { query, page } = req.body;
   if (!query) {
     res.send({ total: 0, total_pages: 0, results: Array(0) });
