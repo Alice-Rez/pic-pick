@@ -18,7 +18,8 @@ router.post("/search", (req, res, next) => {
     console.log("calling Axios");
     Axios({
       method: "GET",
-      url: "https://api.unsplash.com/search/collections",
+      url:
+        "https://cors-anywhere.herokuapp.com/https://api.unsplash.com/search/collections",
       params: {
         client_id: process.env.API_KEY,
         query: query,
