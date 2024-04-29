@@ -2,7 +2,7 @@
 
 "Pick your pictures"
 
-Explore [Live demo](pic-pick.herokuapp.com/) or [Set it up](#setup) on your localhost
+[Set it up](#setup) on your localhost
 
 ## Description
 
